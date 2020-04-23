@@ -1,0 +1,18 @@
+/* Scss Document */
+@charset "utf-8";
+
+.sitemap {
+    
+    li {
+        font-weight: bold;
+        
+        #footer & {
+            @extend .lightlink;
+        }
+        
+        li {
+            font-weight: normal;
+            margin-left: .75em;
+        }
+    }   
+}

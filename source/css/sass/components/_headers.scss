@@ -1,0 +1,14 @@
+/* Scss Document */
+@charset "utf-8";
+
+// header variables
+$header-medium-color:       $grey;
+
+.site-section-title {
+    //background-color: $white-ter;
+    
+    .title {
+        font-weight: normal;
+        color: $header-medium-color;
+    }
+}

@@ -1,0 +1,119 @@
+/* Scss Document */
+@charset "utf-8";
+
+#body-content .container {
+    a {
+        text-decoration: underline;
+        text-decoration-color: tint($link, 66%);
+        text-decoration-thickness: .125em;
+        text-underline-offset: 1.5px;
+        
+        &.greylink {
+            text-decoration-color: tint($grey-light, 30%);
+        }
+    }
+}
+
+// social links
+ul.social {
+    @extend .is-inline-flex;
+    
+    li {
+        margin-left: 15px;
+        
+        a {
+            color: $mije-grey-light;
+            
+            &:hover {
+                color: $black;
+            }
+        }
+
+        span {
+            @extend .is-sr-only;
+        }
+    }
+    
+    // in navbar
+    .navbar & {
+        font-size: .8em;
+        margin-top: .25em;
+        margin-left: .75rem;
+    }
+    .navbar .is-active & {
+        margin-left: 0;
+        
+        li:first-child {
+            margin-left: 0;
+        }
+    }
+    
+    // in site footer
+    #footer & {
+        
+        li {
+            margin-left: 0;
+            margin-right: 15px;
+            
+            @extend .whitelink-trans;
+        }
+    }
+}
+
+.caption {
+    @extend .greylink;
+}
+.notification.download a {
+    font-weight: bold;
+    text-decoration: none !important;
+    
+    &:hover {
+        color: $link;
+    }
+}
+
+.top-link {
+    transition: all .25s ease-in-out;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1em .5em 0;
+    color: transparentize($mije-grey-light,0.2);
+    
+    @include breakpoint($tablet) {
+        margin: 0 2em 1.5em 0;
+    }
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+ 
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.navlink {
+    @include linx($black, $black, $mije-navy, $mije-navy-light);
+}
+
+.greylink { /* apply to link containers */
+	@include linx($text-light,$text-light,$link,$black); //$link, $visit, $hover, $active
+}
+.whitelink { /* apply to link containers */
+	@include linx($white, $white, transparentize($white,0.2), transparentize($white,0.1)); //$link, $visit, $hover, $active
+}
+
+.whitelink-trans { /* apply to link containers */
+	@include linx($trans-white, $trans-white, $white, $white); //$link, $visit, $hover, $active
+}
+
+.lightlink {
+    @include linx($mije-yellow-light, $mije-yellow-light, $white, transparentize($white,0.1));
+}

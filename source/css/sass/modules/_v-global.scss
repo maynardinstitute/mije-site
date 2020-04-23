@@ -1,0 +1,52 @@
+/* Scss Document */
+@charset "utf-8";
+
+// MIJE custom colors
+$mije-red-orange:                               #F24F31;
+$mije-yellow:                                   #F8E401;
+$mije-yellow-light:                             #FFF585;
+$mije-yellow-trans:                             transparentize($mije-yellow-light,0.7);
+$mije-navy:                                     #222B65;
+$mije-navy-light:                               tint($mije-navy,20%);
+$mije-navy-lighter:                             tint($mije-navy,33%);
+$mije-navy-dark:                                shade($mije-navy,20%);
+$mije-grey:                                     #828282;
+$mije-grey-light:                               #BDBDBD;
+$mije-black:                                    #000000;
+$mije-white:                                    #FFFFFF;
+$trans-white:                                   transparentize($mije-white,0.4);
+
+// MIJE fonts 
+$mije-sans-serif:                               "Proxima Nova", proxima-nova;
+$mije-serif:                                    "PT Serif", pt-serif, serif;
+
+// redefine Bulma colors
+$orange:                                        $mije-red-orange;
+$primary:                                       $orange;
+$navbar-height:                                 5.5rem;
+$navbar-item-img-max-height:	                4rem;
+$navbar-padding-vertical:                       .5rem;
+$navbar-padding-horizontal:                     1.5rem;
+$navbar-item-color:                             $mije-black;
+$navbar-item-hover-color:                       $mije-navy-light;
+$navbar-item-hover-background-color:            tint($mije-navy-light,93%);
+$navbar-dropdown-arrow:                         $mije-grey-light;
+$navbar-dropdown-background-color:              $mije-navy;
+$navbar-dropdown-item-hover-color:              $mije-white;
+$navbar-dropdown-item-hover-background-color:   $mije-navy-dark;
+$navbar-dropdown-radius:                        0;
+
+$text:                                          $mije-black;
+$text-strong:                                   $mije-black;
+
+// redefine Bulma fonts
+$family-sans-serif:                             $mije-sans-serif, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-primary:                                $mije-serif;
+$title-family:                                  $mije-sans-serif;
+$title-weight:                                  800;
+$subtitle-family:                               $title-family;
+$button-family:                                 $mije-sans-serif;
+
+// redefine Bulma breakpoints
+$tablet:            768px;
+//$desktop:           1023px;

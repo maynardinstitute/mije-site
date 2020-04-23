@@ -1,0 +1,16 @@
+/* Scss Document */
+@charset "utf-8";
+
+.article-feature {
+    margin-bottom: 3rem;
+}
+
+.endnote {
+    margin-top: 3rem;
+    color: $grey-dark;
+}
+
+@include breakpoint($widescreen) {
+    #body-column {
+    }
+}

@@ -1,0 +1,67 @@
+/* Scss Document */
+@charset "utf-8";
+
+#footer {
+    @extend .whitelink;
+
+    font-family: $mije-sans-serif;
+    font-size: .8125em;
+    color: $white;
+    background-color: $mije-navy-light;
+    margin-top: 4em;
+    
+    address {
+        margin-bottom: 1em;
+    }
+    
+    button {
+        margin-bottom: $small-font-size;
+    }
+    
+    h4 {
+        font-size: 1.3em;
+        margin-bottom: $small-font-size;
+    }
+    
+    strong {
+        color: inherit;
+    }
+    
+    .logo-sq {
+        width: 50px;
+        height: auto;
+        opacity: 0.66;
+    }
+    
+}
+
+// re-order columns depending on screen size
+#footer .columns > .column {
+    margin-bottom: 1rem;
+}
+#ft-address,
+#ft-sitemap {
+    border-bottom: solid 1px transparentize($white, 0.8);
+}
+
+ @include breakpoint ($widescreen) {
+    #footer .columns > .column {
+        margin-bottom: 0;
+     } 
+     #ft-address,
+     #ft-sitemap {
+        border-bottom: none;
+     }
+    #ft-address {
+         @include order (0);
+     }     
+     #ft-financials {
+         @include order (1);
+     }
+     #ft-sitemap {
+         @include order (2);
+     }
+    #ft-donate {
+         @include order (3);
+     }
+}

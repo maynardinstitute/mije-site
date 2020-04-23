@@ -1,0 +1,71 @@
+/* Scss Document */
+@charset "utf-8";
+
+address {
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6,h7 {
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+.byline,
+.caption {
+    @extend .smalltext;
+    font-family: $title-family;
+}
+
+.caption {
+    margin-bottom: 0;
+    padding: .5em 0;
+}
+
+.byline,
+.credit {
+    color: $text-light;
+}
+
+.byline {
+    margin-bottom: 3rem;
+}
+
+.sep {
+    margin: 0 .5em;
+    color: $grey-lighter;
+}
+
+.notification {
+    font-family: $title-family;
+    
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.download {
+    //border-top: solid 1px $grey-lighter;
+}
+
+.endnote {
+    @extend .smalltext;
+    font-family: $title-family;
+}
+
+.smalltext {
+    font-size: .875rem;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+/* forces line break before */
+.wrapbefore {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
