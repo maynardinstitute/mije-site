@@ -50,11 +50,6 @@ p {
     //border-top: solid 1px $grey-lighter;
 }
 
-.endnote {
-    @extend .smalltext;
-    font-family: $title-family;
-}
-
 .smalltext {
     font-size: .875rem;
 }

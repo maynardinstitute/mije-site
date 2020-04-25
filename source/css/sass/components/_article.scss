@@ -8,12 +8,12 @@
     font-size: 1.2em;
     line-height: 1.66;
 }
-
 .endnote {
+    font-family: $title-family;
+    font-size: .875em;    
     margin-top: 3rem;
     color: $grey-dark;
 }
-
 @include breakpoint($widescreen) {
     #body-column {
     }
