@@ -1,0 +1,109 @@
+/* Scss Document */
+@charset "utf-8";
+
+// styles for Home page
+
+$feature-height: 100vw;
+
+#home-feature {
+    background-color: $mije-orange;
+    background-image: url('/img/home/mije_home_feature4.jpg');
+    background-size: cover;
+    background-position: 50% 2%;
+    position: relative;
+    padding-bottom: 1.5rem;
+    min-height: $feature-height;
+    
+    &::before {
+        @include position(absolute, 0);
+        background-color: $white;
+        opacity: 0.12;
+        content: "";
+        display: block;
+        pointer-events: none;
+    }
+    &::after {
+        @extend .gradient-edge-bottom;
+    }
+    
+    .container {
+        position: relative;
+        z-index: 5;
+        color: $white;
+        padding-top: $feature-height * 0.5;
+    }
+    .column:first-child {
+        font-family: $title-family;
+        font-size: 1.875rem;
+        line-height: 1.2;
+        text-align: left;
+    }
+    .column:nth-child(2) {
+        font-family: $subtitle-family;
+        font-size: $text-size-plus;
+        padding-top: 1em;
+    }
+    
+    @include breakpoint($tablet) {
+    
+        $feature-height: 75vw;
+        min-height: $feature-height;
+        
+        .container {
+            padding-top: $feature-height * 0.5;
+        }
+        .column:first-child {
+            font-size: 2em;
+            text-align: right;
+        }
+    }
+    
+    @include breakpoint($desktop) {
+        
+        $feature-height: 40vw;
+        min-height: $feature-height;
+        
+        .container {
+            padding-top: $feature-height * 0.5;
+        }
+        .column:first-child {
+        }
+        
+    }
+    
+     @include breakpoint($widescreen) {
+       
+        .column:first-child {
+            font-size: 2.5em;
+        }
+        
+    }
+    
+}
+
+.cta-box {
+    padding: $column-gap * 1.5;
+    
+    h3 {
+        font-family: $subtitle-family;
+        font-weight: 300;
+        @extend .is-size-5;
+        line-height: 1.2;
+    }
+    
+     @include breakpoint($widescreen) {
+        @include flexbox;
+        @include align-self('stretch');
+        @include align-content('stretch');
+        
+         h3 { 
+             text-align: right;
+             margin-right: $column-gap * 1.5;
+             width: 40%;
+         } 
+    }
+}
+#cta-newsletter {
+}
+#cta-diversity {
+}

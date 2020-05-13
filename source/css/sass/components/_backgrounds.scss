@@ -1,0 +1,30 @@
+/* Scss Document */
+@charset "utf-8";
+
+.gradient-edge-bottom {
+	$image-gradient-color-top: $mije-navy;
+	$transparency-top-pos: 60%;
+	$transparency-top: 1.0;
+	$image-gradient-color-bottom: darken($mije-navy, 10%);
+	$transparency-bottom-pos: 95%;
+	$transparency-bottom: 0;
+	$vertical-angle: 180deg;
+
+	@include position(absolute, 0);
+	//z-index:50;
+	background-image: linear-gradient($vertical-angle,
+	transparentize($image-gradient-color-top, $transparency-top) $transparency-top-pos,
+	transparentize($image-gradient-color-bottom, $transparency-bottom) $transparency-bottom-pos
+	);
+    //background-blend-mode: multiply;
+	content: "";
+	display: block;
+	pointer-events: none;
+}
+
+.bg-navy-lighter {
+    background-color: $mije-navy-lighter;
+}
+.bg-orange-light {
+    background-color: $mije-orange-light;
+}

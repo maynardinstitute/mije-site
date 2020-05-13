@@ -3,12 +3,14 @@
 
 // MIJE custom colors
 $mije-red-orange:                               #F24F31;
+$mije-orange:                                   #F89e01;
+$mije-orange-light:                             tint($mije-orange,71%);
 $mije-yellow:                                   #F8E401;
 $mije-yellow-light:                             #FFF585;
 $mije-yellow-trans:                             transparentize($mije-yellow-light,0.7);
 $mije-navy:                                     #222B65;
 $mije-navy-light:                               tint($mije-navy,20%);
-$mije-navy-lighter:                             tint($mije-navy,33%);
+$mije-navy-lighter:                             #D8DCF1;
 $mije-navy-dark:                                shade($mije-navy,20%);
 $mije-grey:                                     #828282;
 $mije-grey-light:                               #BDBDBD;
@@ -21,8 +23,8 @@ $mije-sans-serif:                               "Proxima Nova", proxima-nova;
 $mije-serif:                                    "PT Serif", pt-serif, serif;
 
 // redefine Bulma colors
-$orange:                                        $mije-red-orange;
-$primary:                                       $orange;
+$orange:                                        $mije-orange;
+$primary:                                       $mije-red-orange;
 $navbar-height:                                 5.5rem;
 $navbar-item-img-max-height:	                4rem;
 $navbar-padding-vertical:                       .5rem;
@@ -31,10 +33,12 @@ $navbar-item-color:                             $mije-black;
 $navbar-item-hover-color:                       $mije-navy-light;
 $navbar-item-hover-background-color:            tint($mije-navy-light,93%);
 $navbar-dropdown-arrow:                         $mije-grey-light;
-$navbar-dropdown-background-color:              $mije-navy;
-$navbar-dropdown-item-hover-color:              $mije-white;
-$navbar-dropdown-item-hover-background-color:   $mije-navy-dark;
-$navbar-dropdown-radius:                        0;
+//$navbar-dropdown-background-color:              $mije-navy;
+$navbar-dropdown-item-hover-color:              $navbar-item-hover-color;
+//$navbar-dropdown-item-hover-background-color:   $mije-navy-dark;
+//$navbar-dropdown-item-active-background-color:  $navbar-dropdown-item-hover-background-color;	
+$navbar-dropdown-radius:                        4px;
+$navbar-dropdown-boxed-radius:                  $navbar-dropdown-radius;
 
 $text:                                          $mije-black;
 $text-strong:                                   $mije-black;
@@ -46,7 +50,12 @@ $title-family:                                  $mije-sans-serif;
 $title-weight:                                  800;
 $subtitle-family:                               $title-family;
 $button-family:                                 $mije-sans-serif;
+$text-size-plus:                                1.125rem;
 
 // redefine Bulma breakpoints
-$tablet:            768px;
-//$desktop:           1023px;
+$screen-s:                  667px;
+$tablet:                    768px;
+$desktop:                   1024px;
+
+// redefine Bulma spacing
+$section-padding:           1.5rem 1rem;

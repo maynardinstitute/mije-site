@@ -18,7 +18,7 @@
     font-size: 1rem;
     padding-top: 0;
     padding-bottom: 0;
-    @extend .whitelink;
+    //@extend .whitelink;
     
     .navbar-item {
         font-weight: normal;
@@ -30,9 +30,9 @@
             padding-bottom: .75em;
         }
     }
-    
+        
     .is-active & {
-        @extend .navlink;
+        //@extend .navlink;
         
         .navbar-item {
             font-weight: normal;

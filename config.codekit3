@@ -7,7 +7,7 @@
 		"uuidString": "D4029DBD-1489-47FB-8B1E-D21E28D14495"
 		}
 	],
-"creatorBuild": "32137",
+"creatorBuild": "32147",
 "files": {
 	"/.gitignore": {
 		"cB": 0,
@@ -199,6 +199,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/source/about-us/news/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/about-us/news/index.html",
+		"oF": 0
+		},
 	"/source/css/sass/components/_article.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -208,6 +216,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/build/css/css/_article.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/source/css/sass/components/_backgrounds.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/css/css/_backgrounds.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
@@ -225,6 +246,19 @@
 		"oS": 0,
 		"sct": 1
 		},
+	"/source/css/sass/components/_general.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/css/css/_general.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
 	"/source/css/sass/components/_headers.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -234,6 +268,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/build/css/css/_headers.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/source/css/sass/components/_home.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/css/css/_home.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
@@ -602,7 +649,7 @@
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/_animated.scss": {
+	"/source/css/sass/vendor/fontawesome/_animated.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -610,12 +657,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/_animated.css",
+		"oAP": "/build/css/sass/css/_animated.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/_bordered-pulled.scss": {
+	"/source/css/sass/vendor/fontawesome/_bordered-pulled.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -623,12 +670,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/_bordered-pulled.css",
+		"oAP": "/build/css/sass/css/_bordered-pulled.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/_core.scss": {
+	"/source/css/sass/vendor/fontawesome/_core.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -636,12 +683,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/_core.css",
+		"oAP": "/build/css/sass/css/_core.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/_fixed-width.scss": {
+	"/source/css/sass/vendor/fontawesome/_fixed-width.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -649,12 +696,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/_fixed-width.css",
+		"oAP": "/build/css/sass/css/_fixed-width.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/_icons.scss": {
+	"/source/css/sass/vendor/fontawesome/_icons.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -662,12 +709,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/_icons.css",
+		"oAP": "/build/css/sass/css/_icons.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/_larger.scss": {
+	"/source/css/sass/vendor/fontawesome/_larger.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -675,12 +722,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/_larger.css",
+		"oAP": "/build/css/sass/css/_larger.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/_list.scss": {
+	"/source/css/sass/vendor/fontawesome/_list.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -688,12 +735,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/_list.css",
+		"oAP": "/build/css/sass/css/_list.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/_mixins.scss": {
+	"/source/css/sass/vendor/fontawesome/_mixins.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -701,12 +748,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/_mixins.css",
+		"oAP": "/build/css/sass/css/_mixins.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/_rotated-flipped.scss": {
+	"/source/css/sass/vendor/fontawesome/_rotated-flipped.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -714,12 +761,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/_rotated-flipped.css",
+		"oAP": "/build/css/sass/css/_rotated-flipped.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/_screen-reader.scss": {
+	"/source/css/sass/vendor/fontawesome/_screen-reader.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -727,12 +774,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/_screen-reader.css",
+		"oAP": "/build/css/sass/css/_screen-reader.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/_shims.scss": {
+	"/source/css/sass/vendor/fontawesome/_shims.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -740,12 +787,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/_shims.css",
+		"oAP": "/build/css/sass/css/_shims.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/_stacked.scss": {
+	"/source/css/sass/vendor/fontawesome/_stacked.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -753,12 +800,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/_stacked.css",
+		"oAP": "/build/css/sass/css/_stacked.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/_variables.scss": {
+	"/source/css/sass/vendor/fontawesome/_variables.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -766,12 +813,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/_variables.css",
+		"oAP": "/build/css/sass/css/_variables.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/brands.scss": {
+	"/source/css/sass/vendor/fontawesome/brands.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -779,12 +826,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/brands.css",
+		"oAP": "/build/css/sass/css/brands.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/duotone.scss": {
+	"/source/css/sass/vendor/fontawesome/duotone.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -792,12 +839,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/build/css/sass/vendor/css/duotone.css",
+		"oAP": "/build/css/sass/css/duotone.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/fontawesome.scss": {
+	"/source/css/sass/vendor/fontawesome/fontawesome.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -805,12 +852,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/fontawesome.css",
+		"oAP": "/build/css/sass/css/fontawesome.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/light.scss": {
+	"/source/css/sass/vendor/fontawesome/light.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -818,12 +865,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/light.css",
+		"oAP": "/build/css/sass/css/light.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/regular.scss": {
+	"/source/css/sass/vendor/fontawesome/regular.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -831,12 +878,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/build/css/sass/vendor/css/regular.css",
+		"oAP": "/build/css/sass/css/regular.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/solid.scss": {
+	"/source/css/sass/vendor/fontawesome/solid.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -844,12 +891,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sass/vendor/css/solid.css",
+		"oAP": "/build/css/sass/css/solid.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/css/sass/vendor/fontawesome/scss/v4-shims.scss": {
+	"/source/css/sass/vendor/fontawesome/v4-shims.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -857,10 +904,21 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/build/css/sass/vendor/css/v4-shims.css",
+		"oAP": "/build/css/sass/css/v4-shims.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
+		},
+	"/source/img/home/mije_home_feature4.jpg": {
+		"ft": 16384,
+		"iS": 141975,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/img/home/mije_home_feature4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"/source/img/logo_maynard_institute_blue-600.png": {
 		"ft": 32768,
@@ -1144,8 +1202,8 @@
 	"creationDate": 608643224.73246503,
 	"displayValue": "mije2020",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "brackets-cafe",
-	"iconImageWasSetByUser": 0,
+	"iconImageName": "brackets-unblue",
+	"iconImageWasSetByUser": 1,
 	"lastBuiltDate": 608644710.39919102
 	},
 "projectSettings": {
