@@ -6,12 +6,16 @@
 $feature-height: 100vw;
 
 #home-feature {
-    background-color: $mije-orange;
-    background-image: url('/img/home/mije_home_feature4.jpg');
+    background-image: url('../img/home/mije_home_feature4.jpg');
     background-size: cover;
-    background-position: 50% 2%;
+    background-position: 50% -2%;
+    background-repeat: no-repeat;
     position: relative;
     padding-bottom: 1.5rem;
+    
+    @include flexbox;
+    @include flex-direction(column);
+    @include justify-content(flex-end);
     min-height: $feature-height;
     
     &::before {
@@ -27,58 +31,172 @@ $feature-height: 100vw;
     }
     
     .container {
+        @include flex-grow(0);        
         position: relative;
         z-index: 5;
-        color: $white;
-        padding-top: $feature-height * 0.5;
+    }
+    .columns {
+        margin-top: -1.5rem;
     }
     .column:first-child {
-        font-family: $title-family;
-        font-size: 1.875rem;
-        line-height: 1.2;
         text-align: left;
+        color: $white;
+        @extend .is-half-tablet; 
+        @extend .is-5-desktop;
+        @extend .is-offset-1-desktop;
+        @extend .is-one-third-widescreen;
+        @extend .is-offset-2-widescreen;
+        
+        h2 {
+            font-family: $title-family;
+            font-size: 1.6rem;
+            line-height: 1.2;
+        }
     }
     .column:nth-child(2) {
-        font-family: $subtitle-family;
-        font-size: $text-size-plus;
-        padding-top: 1em;
+        @extend .is-half-tablet;
+        @extend .is-5-desktop;
+        
+        &:not(.show-mobile) {
+            @extend .is-hidden-mobile;
+        }
+        
+        p {
+            font-family: $subtitle-family;
+            margin-bottom: 0; 
+            padding-top: .5em;
+        }
+    }
+    .blurb {
+        @extend .yellowlink;
+        
+        .link-callout {
+            font-size: .9em;
+            display: block;
+            margin-top: .5em;
+        }
+    }
+    
+    @include breakpoint(0 ($tablet - 1px)) {
+       
+        &.show-mobile {
+            $feature-height: 88vw;
+            background-size: auto $feature-height;
+            padding-bottom: 0;
+
+            &::before,
+            &::after {
+                height: $feature-height;
+            }
+
+            .column:first-child {
+                min-height: $feature-height;
+                @include flexbox;
+                @include flex-direction(column);
+                @include justify-content(flex-end);
+            }
+
+            .column:nth-child(2) {
+                display: block !important;
+
+                &.blurb {
+                    @include linx($mije-red-orange, $mije-red-orange, $mije-black, tint($mije-red-orange,20%));
+
+                    p {
+                        margin-bottom: 0; 
+                    }
+                }
+            }
+        }
+    }
+    
+    @include breakpoint(375px) {
+       .column:first-child {
+            h2 {
+                font-size: 1.875rem;
+            }
+        }
     }
     
     @include breakpoint($tablet) {
     
-        $feature-height: 75vw;
+        $feature-height: 84vw;
         min-height: $feature-height;
+        @include flexbox;
+        @include flex-direction(column);
+        @include justify-content(flex-end);
+        background-size: cover;
+        padding-bottom: 1.5em;
         
-        .container {
-            padding-top: $feature-height * 0.5;
+        &::before,
+        &::after {
+            height: 100% !important;
         }
+      
         .column:first-child {
-            font-size: 2em;
+            min-height: 0 !important;
+            display: block;          
             text-align: right;
+            
+            h2 {
+                font-size: 2.2em;
+            }            
+        }
+        
+        &.show-mobile .column:first-child {
+            @include justify-content(flex-start);
+        }
+        
+        .column:nth-child(2) {
+            
+            &.blurb {
+                @include linx($mije-yellow, $mije-yellow, $white, tint($mije-yellow,20%));            
+            }
+            
+            p {
+                font-size: $text-size-plus;
+                color: $white;
+            }
         }
     }
     
     @include breakpoint($desktop) {
         
-        $feature-height: 40vw;
+        $feature-height: 48vw;
         min-height: $feature-height;
         
         .container {
             padding-top: $feature-height * 0.5;
         }
-        .column:first-child {
-        }
         
+        .column:nth-child(2) {
+            p {
+                margin-bottom: 1em; 
+            }
+        }
     }
     
      @include breakpoint($widescreen) {
        
         .column:first-child {
-            font-size: 2.5em;
+            h2 {
+                font-size: 2.5em;
+            }
         }
-        
     }
     
+    
+}
+
+.cta-boxes {
+    .column:first-child {
+        @extend .is-5-widescreen; 
+        @extend .is-offset-1-widescreen;
+    }
+    .column:last-child {
+        @extend .is-5-widescreen;
+        @extend .is-flex-desktop;
+    }
 }
 
 .cta-box {
@@ -91,16 +209,25 @@ $feature-height: 100vw;
         line-height: 1.2;
     }
     
-     @include breakpoint($widescreen) {
+    p:last-child {
+        margin-bottom: 0;
+    }
+    
+    .button {
+        margin-top: 1em;
+    }
+    
+    @include breakpoint($desktop) {
         @include flexbox;
-        @include align-self('stretch');
-        @include align-content('stretch');
         
          h3 { 
              text-align: right;
              margin-right: $column-gap * 1.5;
-             width: 40%;
+             @include flex-basis(40%);
          } 
+         p {
+             @include flex-basis(60%);
+         }
     }
 }
 #cta-newsletter {

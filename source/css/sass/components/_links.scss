@@ -63,6 +63,10 @@ ul.social {
 .caption {
     @extend .greylink;
 }
+.link-callout {
+    font-family: $family-primary;
+    font-weight: bold;
+}
 .notification.download a {
     font-weight: bold;
     text-decoration: none !important;
@@ -71,7 +75,6 @@ ul.social {
         color: $link;
     }
 }
-
 .top-link {
     transition: all .25s ease-in-out;
     position: fixed;
@@ -87,33 +90,41 @@ ul.social {
     @include breakpoint($tablet) {
         margin: 0 2em 1.5em 0;
     }
+    
+    &.show {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &.hide {
+      visibility: hidden;
+      opacity: 0;
+    }
 }
 
-.show {
-  visibility: visible;
-  opacity: 1;
-}
- 
-.hide {
-  visibility: hidden;
-  opacity: 0;
-}
+
 
 .navlink {
     @include linx($black, $black, $mije-navy, $mije-navy-light);
 }
-
 .greylink { /* apply to link containers */
 	@include linx($text-light,$text-light,$link,$black); //$link, $visit, $hover, $active
 }
 .whitelink { /* apply to link containers */
 	@include linx($white, $white, transparentize($white,0.2), transparentize($white,0.1)); //$link, $visit, $hover, $active
 }
-
 .whitelink-trans { /* apply to link containers */
 	@include linx($trans-white, $trans-white, $white, $white); //$link, $visit, $hover, $active
 }
-
+.orangelink {
+    @include linx($mije-orange, $mije-orange, $mije-black, tint($mije-orange,20%));
+}
+.redorangelink {
+    @include linx($mije-red-orange, $mije-red-orange, $mije-black, tint($mije-red-orange,20%));
+}
+.yellowlink {
+    @include linx($mije-yellow, $mije-yellow, $white, tint($mije-yellow,20%));
+}
 .lightlink {
     @include linx($mije-yellow-light, $mije-yellow-light, $white, transparentize($white,0.1));
 }
