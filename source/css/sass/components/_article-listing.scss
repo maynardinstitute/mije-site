@@ -1,0 +1,47 @@
+/* Scss Document */
+@charset "utf-8";
+
+// article listings
+
+.listing {
+    padding-top: .75rem;
+    
+    > .column:first-child {
+        @extend .is-3-tablet;
+        @extend .is-4-desktop;
+        @extend .is-3-widescreen;
+        @extend .is-offset-1-widescreen;
+    }
+    
+    > .column:nth-child(2) {
+        @extend .is-9-tablet;
+        @extend .is-8-desktop;
+        @extend .is-7-widescreen;
+    }
+    
+    .article-title {
+        @extend .is-size-5-mobile; 
+        @extend .is-size-4-tablet; 
+        @extend .is-size-3-desktop; 
+    }
+    
+}
+
+.listing-info-panel {
+    font-family: $title-family;
+    @extend .smalltext;
+    
+    strong {
+        display: block;
+    }
+    
+    .column:first-child {
+        @extend .is-3-desktop;
+    }
+    .column:nth-child(2) {
+        @extend .is-3-desktop;
+    }
+     .column:nth-child(3) {
+        @extend .is-6-desktop;
+    }
+}

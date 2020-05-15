@@ -11,6 +11,7 @@ $mije-yellow-trans:                             transparentize($mije-yellow-ligh
 $mije-navy:                                     #222B65;
 $mije-navy-light:                               tint($mije-navy,20%);
 $mije-navy-lighter:                             #D8DCF1;
+$mije-navy-lighest:                             tint($mije-navy,40%);
 $mije-navy-dark:                                shade($mije-navy,20%);
 $mije-grey:                                     #828282;
 $mije-grey-light:                               #BDBDBD;

@@ -122,7 +122,7 @@
     <!-- end navbar/siteheader -->
     
     <!-- feature -->
-    <section id="home-feature" class="section show-mobile">
+    <section id="home-feature" class="section-resp show-mobile">
         <div class="container">
              <div class="columns">
                 <div class="column">
@@ -138,9 +138,9 @@
     <!-- end feature -->
     
     <!-- body -->
-    <section id="home-content" class="section">
-        <div class="container">
-             <div class="columns cta-boxes">
+    <section id="home-content" class="section-resp">
+        <div class="container cta-boxes">
+             <div class="columns">
                 <div class="column">
                     <div id="cta-newsletter" class="cta-box bg-navy-lighter">
                         <h3>Maynard Email Newsletter</h3>
@@ -162,22 +162,58 @@
                  </div>
             </div>
         </div>
-        <div class="container">
-             <div class="columns">
-                <div class="column">
-                 
-                 <p>[Maynard 200]</p>
+        <div class="container home-listings">
                     
-                 </div>
-            </div>
+            <!-- article listing -->
+            <article class="columns listing">
+                <figure class="column">
+                    <p class="image is-4by3">
+                        <img src="img/maynard200_thumb.png">
+                    </p>
+                </figure>
+                <div class="column">
+                    
+                    <p class="pre-title"><strong>Professsional Development</strong></p>
+                    <h2 class="article-title">Maynard 200 Journalism Fellowship Trains Storytellers, Leaders, Entrepreneurs in San Francisco </h2>
+                    
+                        <div class="columns listing-info-panel">
+                            <div class="column">
+                                <strong>Heading:</strong> 
+                                April 30, 2020
+                            </div>
+                            <div class="column">
+                                <strong>Heading:</strong> 
+                                9 months
+                            </div>
+                            <div class="column">
+                                <a class="link-callout" href="#"><i class="fas fa-arrow-circle-right"></i> Learn how our programs are helping transform the media industry.</a>
+                            </div>
+                        </div>
+                    
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet eros quis lacus gravida gravida. Suspendisse vitae ex lorem. Nam efficitur placerat fringilla. Ut eget massa sit amet dui rutrum tincidunt. Etiam laoreet pretium magna, sed tempor risus ullamcorper in.</p>
+                        
+                        <ul>
+                            <li>Northwestern Medill will host the Maynard 200 place-based program in the Bay Area at its downtown San Francisco campus, starting with the first training round tentatively to commence in October 2020, dependent on the recommendations of healthcare professionals in light of threats to public health posed by the coronavirus.</li>
+
+                            <li>It supports the next generation of storytellers, managers/leaders and media entrepreneurs of diverse backgrounds by providing relevant training courses, resources and mentorship for a year by distinguished media professionals and experts in various disciplines.</li>
+
+                            <li>A majority of the estimated 35-member 2020 fellowship class will be recruited locally, and the rest will be chosen from a national pool of applicants.</li>
+
+                            <li>Candidates can apply for one of three tracks — Storytelling, Advanced Leadership and Media Entrepreneurship. Training dates are currently TBD as cited above and will be held at Northwestern’s San Francisco campus at 44 Montgomery St. </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+                    
         </div>
     </section>
     <!-- end body -->
     
     <footer id="footer" class="section">
-        <div class="container is-fullhd">
-            <div class="columns is-variable is-multiline">
-                <div id="ft-address" class="column is-half-tablet is-2-widescreen">
+        <div class="container">
+            <div class="columns">
+                <div id="ft-address" class="column">
                     <img class="logo-sq" src="img/logo_maynard_institute_white_sq.png">
                     <address>
                         <strong>The Maynard Institute for Journalism Education</strong><br>
@@ -193,10 +229,10 @@
                         <li><a href="https://medium.com/@MaynardInst"><i class="fab fa-medium-m fa-2x"></i><span>Medium</span></a></li>
                     </ul>     
                 </div>
-                <div id="ft-sitemap" class="column is-half-tablet is-4-widescreen">
+                <div id="ft-sitemap" class="column">
                     <h4>mije.org</h4>
                     
-                     <div class="columns is-mobile">
+                     <div class="columns">
                         <div class="column">
                             <ul class="sitemap">
                                 <li><a href="#">Home</a></li>
@@ -241,11 +277,11 @@
                     </div>
                     
                 </div>
-                <div id="ft-financials" class="column is-half-tablet is-4-widescreen">
+                <div id="ft-financials" class="column">
                     <h4>Financials</h4>
 
                 </div>                
-                <div id="ft-donate" class="column is-one-third-tablet is-2-widescreen">
+                <div id="ft-donate" class="column">
                     <h4>Support News Diversity</h4>
                     <button id="bt-donate-footer" class="button is-primary"><strong>Donate</strong></button>
                     <p>Our work depends on donations from people who like you care. Support newsroom diversity and inclusiveness. </p>

@@ -1,16 +1,16 @@
 /* Scss Document */
 @charset "utf-8";
 
-section {
+.section-resp {
     
+    padding: 1.5rem 1rem;
+
     @include breakpoint($screen-s) {
-        $section-padding: 1.5rem 1.5rem;
-        //padding: $section-padding !important; 
+        padding: 1.5rem 1.5rem; 
     }
     
     @include breakpoint($tablet) {
-        $section-padding: 3.5rem 1.5rem;
-        //padding: $section-padding !important; 
+        //padding: 1.5rem 1.5rem; 
     }
     
 }

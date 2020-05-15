@@ -3,21 +3,6 @@
 
 // styles for Home page
 
-#home-feature,
-#home-content {
-    
-    padding:  1.5rem 1rem;
-    
-     @include breakpoint($screen-s) {
-        padding: 1.5rem 1.5rem;
-    }
-    
-    @include breakpoint($tablet) {
-        padding: 3.5rem 1.5rem;
-    }
-    
-}
-
 $feature-height: 100vw;
 
 #home-feature {
@@ -26,13 +11,15 @@ $feature-height: 100vw;
     background-position: 50% -2%;
     background-repeat: no-repeat;
     position: relative;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     
+    // flexbox on this element allows aligning contents to bottom
     @include flexbox;
     @include flex-direction(column);
     @include justify-content(flex-end);
     min-height: $feature-height;
     
+    // translucent overlay (mimics control over photo opacity)
     &::before {
         @include position(absolute, 0);
         background-color: $white;
@@ -41,6 +28,7 @@ $feature-height: 100vw;
         display: block;
         pointer-events: none;
     }
+    // gradient overlay darkens bottom of photo to increase text legibility
     &::after {
         @extend .gradient-edge-bottom;
     }
@@ -48,7 +36,7 @@ $feature-height: 100vw;
     .container {
         @include flex-grow(0);        
         position: relative;
-        z-index: 5;
+        z-index: 5; // setting z-index places content above overlays
     }
     .columns {
         margin-top: -1.5rem;
@@ -92,12 +80,13 @@ $feature-height: 100vw;
         }
     }
     
-    @include breakpoint(0 ($tablet - 1px)) {
-       
-        &.show-mobile {
+    &.show-mobile {
+
+        @include breakpoint(0 ($tablet - 1px)) {
+
             $feature-height: 88vw;
             background-size: auto $feature-height;
-            padding-bottom: 0;
+            //padding-bottom: 0;
 
             &::before,
             &::after {
@@ -123,6 +112,14 @@ $feature-height: 100vw;
                 }
             }
         }
+        
+        @include breakpoint($tablet) {
+    
+            .column:first-child {
+                @include justify-content(flex-start);
+            }
+        }
+        
     }
     
     @include breakpoint(375px) {
@@ -141,7 +138,7 @@ $feature-height: 100vw;
         @include flex-direction(column);
         @include justify-content(flex-end);
         background-size: cover;
-        padding-bottom: 1.5em;
+        //padding-bottom: 1.5em;
         
         &::before,
         &::after {
@@ -156,10 +153,6 @@ $feature-height: 100vw;
             h2 {
                 font-size: 2.2em;
             }            
-        }
-        
-        &.show-mobile .column:first-child {
-            @include justify-content(flex-start);
         }
         
         .column:nth-child(2) {
@@ -200,12 +193,11 @@ $feature-height: 100vw;
         }
     }
     
-    
 }
 
-#home-content {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+.cta-boxes,
+.home-listings {
+    padding: .75em 0;
 }
 
 .cta-boxes {
@@ -249,8 +241,4 @@ $feature-height: 100vw;
              @include flex-basis(60%);
          }
     }
-}
-#cta-newsletter {
-}
-#cta-diversity {
 }

@@ -1,6 +1,12 @@
 /* Scss Document */
 @charset "utf-8";
 
+.article-title {
+    @extend .title;
+    @extend .is-size-4-mobile; 
+    @extend .is-size-2-tablet; 
+    @extend .is-spaced;
+}
 .article-feature {
     margin-bottom: 3rem;
 }
@@ -14,7 +20,10 @@
     margin-top: 3rem;
     color: $grey-dark;
 }
-@include breakpoint($widescreen) {
-    #body-column {
-    }
+
+#body-column {
+    @extend .is-two-thirds-tablet;
+    @extend .is-7-widescreen;
+    @extend .is-offset-2-tablet;
+    @extend .is-offset-3-widescreen;
 }

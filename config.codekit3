@@ -207,6 +207,19 @@
 		"oAP": "/build/about-us/news/index.html",
 		"oF": 0
 		},
+	"/source/css/sass/components/_article-listing.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/css/css/_article-listing.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
 	"/source/css/sass/components/_article.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -320,6 +333,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/build/css/css/_lists.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/source/css/sass/components/_media.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/css/css/_media.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
@@ -947,6 +973,17 @@
 		"iS": 132591,
 		"oA": 0,
 		"oAP": "/build/img/m200_medill_logos.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/img/maynard200_thumb.png": {
+		"ft": 32768,
+		"iS": 46361,
+		"oA": 0,
+		"oAP": "/build/img/maynard200_thumb.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,

@@ -13,6 +13,24 @@ p {
     margin-bottom: 1.5em;
 }
 
+.pre-title {
+    @extend .smalltext;
+    @extend .letterspaced;
+    font-family: $title-family;    
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    
+    strong {
+        color: $mije-navy-lighest;
+    }
+}
+
+.section-title {
+    @extend .title;
+    @extend .is-size-4-mobile;
+    @extend .is-size-3-tablet;
+}
+
 .byline,
 .caption {
     @extend .smalltext;
@@ -48,6 +66,10 @@ p {
 
 .download {
     //border-top: solid 1px $grey-lighter;
+}
+
+.letterspaced {
+    letter-spacing: .1em;
 }
 
 .smalltext {
