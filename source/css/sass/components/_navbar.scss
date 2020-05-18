@@ -4,6 +4,11 @@
 /* Site header */
 .navbar {
     font-family: $mije-sans-serif;
+    
+    @include breakpoint($desktop) {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
 }
 
 .navbar-item,

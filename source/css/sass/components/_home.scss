@@ -59,6 +59,7 @@ $feature-height: 100vw;
     .column:nth-child(2) {
         @extend .is-half-tablet;
         @extend .is-5-desktop;
+        @extend .is-4-widescreen;
         
         &:not(.show-mobile) {
             @extend .is-hidden-mobile;
@@ -162,7 +163,6 @@ $feature-height: 100vw;
             }
             
             p {
-                font-size: $text-size-plus;
                 color: $white;
             }
         }
@@ -184,20 +184,41 @@ $feature-height: 100vw;
         }
     }
     
-     @include breakpoint($widescreen) {
+    @include breakpoint($widescreen) {
        
+        $feature-height: 45vw;
+        min-height: $feature-height;
+        
+        .container {
+            padding-top: $feature-height * 0.5;
+        }
+        
         .column:first-child {
             h2 {
                 font-size: 2.5em;
             }
         }
+        .column:nth-child(2) {
+            p {
+                font-size: $text-size-plus;
+            }
+         }
     }
     
+    @include breakpoint($fullhd) {
+       
+        $feature-height: 38vw;
+        min-height: $feature-height;
+        
+        .container {
+            padding-top: $feature-height * 0.5;
+        }
+    }
 }
 
 .cta-boxes,
 .home-listings {
-    padding: .75em 0;
+    padding: 1em 0;
 }
 
 .cta-boxes {
@@ -220,11 +241,13 @@ $feature-height: 100vw;
         @extend .is-size-5;
         line-height: 1.2;
     }
-    
-    p:last-child {
-        margin-bottom: 0;
-    }
-    
+    p {
+        font-size: $text-size-small;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }    
     .button {
         margin-top: 1em;
     }
@@ -238,7 +261,8 @@ $feature-height: 100vw;
              @include flex-basis(40%);
          } 
          p {
-             @include flex-basis(60%);
+            @include flex-basis(60%);
+            font-size: $text-size-default;
          }
     }
 }
